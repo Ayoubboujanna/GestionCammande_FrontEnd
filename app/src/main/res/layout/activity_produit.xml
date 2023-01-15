@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF018786"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Ajouter un Article"
+                    android:textColor="#FFFFFF"
+                    android:textFontWeight="500"
+                    android:textSize="30sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center_vertical|left"
+                        android:text="Catégorie"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cat_designation"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/static_box"
+                        android:backgroundTint="#FF03DAC5"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:text="Maillots"
+                        android:textColor="#595959"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="358dp"
+                    android:layout_height="107dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pa"
+                        android:layout_width="match_parent"
+                        android:layout_height="98dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center_vertical|left"
+                        android:text="Libellé"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/libelle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/pro_lib"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#D9F1F4" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="107dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center_vertical|left"
+                        android:text="Prix Unitaire"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/pro_prix"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FFD9F1F4"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF018786"
+                        android:text="RETOUR"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="4"
+                        android:backgroundTint="#FF018786"
+                        android:onClick="getIputValues"
+                        android:text="AJOUTER"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
